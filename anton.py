@@ -1,5 +1,7 @@
-user_name = 'Ivan Petrov'
-def myfunc():
-	print(user_name)
-	
-myfunc()
+s = input()
+print(len(s))
+t = input()
+number = int(t)
+u = str(number)
+print(s * 3)
+print(s + ' ' + u)
