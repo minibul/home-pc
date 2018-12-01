@@ -18,5 +18,5 @@ def ask_user(ask_and_answers):
 		if user_input == 'пока':
 			break
 
-
-ask_user(ask_and_answers)
+if __name__ == '__main__':
+	ask_user(ask_and_answers)

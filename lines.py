@@ -1,19 +1,23 @@
-def 
+def fun(first, second):
+	
+	if type(first) != type('') and type(second) != type(''):
+		return(0)
+	
+	elif first == second:
+		return(1)
+
+	elif first >= second:
+		return(2)
+
+	elif first != second and second != 'learn':
+		return(3)
+
+	else:
+		return(0)
 
 
 first_line = input('Введите ваш password: ') 
 second_line = input('Повторите ваш password: ')
 
-if first_line == second_line:
-	print(1)
-
-elif first_line >= second_line:
-	print(2)
-
-elif first_line != second_line and 'learn':
-	print(3)
-
-else:
-	print(0)
-
-
+res = fun(first_line, second_line)
+print(res+100)
