@@ -20,4 +20,4 @@ first_line = input('Введите ваш password: ')
 second_line = input('Повторите ваш password: ')
 
 res = fun(first_line, second_line)
-print(res+100)
+print(res)

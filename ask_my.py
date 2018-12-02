@@ -18,5 +18,19 @@ def ask_user(ask_and_answers):
 		if user_input == 'пока':
 			break
 
+
 if __name__ == '__main__':
 	ask_user(ask_and_answers)
+
+def errors(questions, ask_and_answers):
+	try:
+		print('Пока')
+	except(KeyboardInterrupt):
+		break
+res = fun(questions, ask_and_answers, 'Пока')
+print(res)
+
+
+
+
+
