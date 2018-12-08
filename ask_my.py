@@ -10,25 +10,25 @@ def get_answer(question, ask_and_answers):
 
 	
 def ask_user(ask_and_answers):
-	while True:
+	can = True
+	while can:
 		user_input = input('Скажи что-нибудь: ')
 		answer = get_answer(user_input, ask_and_answers)
 		print(answer)
 
 		if user_input == 'пока':
-			break
+			can = False
 
 
 if __name__ == '__main__':
-	ask_user(ask_and_answers)
-
-def errors(questions, ask_and_answers):
+	
 	try:
-		print('Пока')
+		ask_user(ask_and_answers)
 	except(KeyboardInterrupt):
-		break
-res = fun(questions, ask_and_answers, 'Пока')
-print(res)
+		print('Пока')
+
+
+
 
 
 
