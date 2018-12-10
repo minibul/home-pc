@@ -8,6 +8,5 @@ school = [{'school_class': '4a', 'scores': [3,4,4,5,2]},
 
 
 for ratings in school:
-    print(sum(ratings['scores']))
-
-
+	print((sum(ratings['scores']))/(len(ratings['scores'])))
+	
