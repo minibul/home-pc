@@ -8,5 +8,18 @@ school = [{'school_class': '4a', 'scores': [3,4,4,5,2]},
 
 
 for ratings in school:
-	print((sum(ratings['scores']))/(len(ratings['scores'])))
-	
+	sum_items = sum(ratings['scores']) 
+	count_items = len(ratings['scores'])
+	name_class = ratings['school_class']
+	print('Средний балл в классе: ' + name_class, sum_items/count_items)
+
+
+def school_rating():
+	for ratings in school:
+		sum_items = sum(ratings['scores']) 
+		count_items = len(ratings['scores'])
+		sr = sum_items/count_items
+		print(sum(list(sr)))
+
+
+school_rating()
